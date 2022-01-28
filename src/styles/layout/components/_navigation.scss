@@ -1,0 +1,12 @@
+.c-navigation {
+  &__list {
+    font-family: $f-chivo-bold;
+    letter-spacing: $ls-sm;
+    line-height: $lh-btn;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 45px;
+  }
+}

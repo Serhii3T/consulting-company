@@ -1,0 +1,61 @@
+//$font-size: 1rem;
+//$font-family: 'Inter', sans-serif;
+//$background-color: #121212;
+//$font-color: #dae0e0;
+//$page-width: 650px;
+
+
+// Fonts
+$f-chivo-regular: "chivo-regular", sans-serif;
+$f-asul-regular: "asul-regular", sans-serif;
+$f-chivo-bold: "chivo-bold", sans-serif;
+$f-asul-bold: "asul-bold", sans-serif;
+
+// Animation
+$a-base: box-shadow-block .5s infinite alternate;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box shadow
+$bs-base: 1px 1px 3px black;
+
+// Colors
+$c-blue-diamond: #45046A;
+$c-blue-chalk: #EFE3FE;
+$c-peppermint: #e6f5e2;
+$c-alabaster: #F7F7F7;
+$c-albescent: #f6e7da;
+$c-lipstick: #b5076b;
+$c-emperor: #555555;
+$c-silver: #a1a1a1;
+$c-viking: #64BFD3;
+$c-daisy: #5C2A9D;
+$c-black: #000;
+$c-white: #fff;
+
+// Font size
+$fs-quote: 30px;
+$fs-body: 16px;
+$fs-sm: 14px;
+$fs-bn: 18px;
+$fs-h2: 48px;
+$fs-h1: 60px;
+
+// Line height
+$lh-sublogo: 26px;
+$lh-address: 24px;
+$lh-text: 22px;
+$lh-mail: 28px;
+$lh-sl-f: 19px;
+$lh-btn: 48px;
+$lh-h1: 60px;
+$lh-sl: 36px;
+
+// Letter spacing
+$ls-sublogo: -0.14px;
+$ls-mail: -0.3px;
+$ls-sm: -0.16px;
+$ls-bn: -0.18px;
+$ls-h2: -0.48px;
+$ls-h1: -0.6px;

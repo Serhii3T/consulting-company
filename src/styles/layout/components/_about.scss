@@ -1,0 +1,99 @@
+.c-about {
+  &__wrapper {
+    justify-content: space-between;
+    margin: 140px auto;
+    max-width: 1170px;
+    min-height: 530px;
+    display: flex;
+    width: 100%;
+
+    @include media ('<desktop') {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__img{
+    max-width: 600px;
+
+    @include media ('<1200px') {
+      margin-right: 30px;
+    }
+
+    @include media ('<desktop') {
+      margin: 0 auto;
+    }
+  }
+
+  &__info{
+    max-width: 470px;
+    text-align: left;
+
+    @include media ('<desktop') {
+      margin: 0 auto 30px;
+      padding: 0 15px;
+    }
+  }
+
+  &__suptitle{
+    text-transform: uppercase;
+    margin: 60px 0 25px;
+    @include suptitle;
+  }
+
+  &__title{
+    margin-bottom: 30px;
+
+    @include media ('<phone') {
+      font-size: $fs-quote;
+    }
+  }
+
+  &__text{
+    letter-spacing: $ls-sm;
+    line-height: $lh-text;
+    margin-bottom: 40px;
+    color: $c-silver;
+  }
+
+  &__firm-logo{
+    justify-content: space-between;
+    color: $c-silver;
+    display: flex;
+
+    @include media ('<525px') {
+      flex-direction: column;
+    }
+  }
+
+  &__firm{
+    letter-spacing: $ls-sublogo;
+    font-family: $f-chivo-bold;
+    text-transform: uppercase;
+    line-height: $lh-sl-f;
+    margin-right: 15px;
+    font-size: $fs-sm;
+
+    @include media ('<525px') {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__logo{
+    font-family: "Font Awesome 5 Brands";
+    font-size: $fs-quote;
+  }
+
+  &__link {
+    margin-right: 35px;
+    line-height: 36px;
+
+    & i {
+      font-style: normal;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+}

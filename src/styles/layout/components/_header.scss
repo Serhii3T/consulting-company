@@ -1,0 +1,32 @@
+.c-header {
+  margin-bottom: 175px;
+
+  &__wrapper {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__nav {
+    justify-content: space-between;
+    display: flex;
+    width: 640px;
+  }
+
+  &__logo {
+    margin: auto 0;
+  }
+
+  &__navigation {
+    align-items: center;
+    display: flex;
+  }
+
+  &__btn {
+    background-color: $c-peppermint;
+    letter-spacing: $ls-sm;
+    line-height: $lh-btn;
+    border-radius: 20px;
+    min-width: 140px;
+  }
+}
+

@@ -1,0 +1,189 @@
+.c-footer {
+  background-color: $c-albescent;
+  align-items: center;
+  border-radius: 50px;
+  min-height: 500px;
+  display: flex;
+  padding: 30px;
+
+  @include media ('<tablet') {
+    padding: 30px 15px 0;
+  }
+
+  @include media ('<tablet') {
+    padding: 30px 15px;
+  }
+
+  &__wrapper {
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+
+    @include media ('<desktop') {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      display: grid;
+      padding: 0 30px;
+    }
+
+    @include media ('<tablet') {
+      padding: 0;
+    }
+
+    @include media ('<phone') {
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(4, auto);
+      justify-content: center;
+      text-align: center;
+      display: grid;
+    }
+  }
+
+  &__copyr{
+    flex-direction: column;
+    display: flex;
+
+    @include media ('<desktop') {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 25px;
+    max-width: 170px;
+    width: 100%;
+
+    @include media ('<phone') {
+      margin: 0 auto 25px;
+    }
+  }
+
+  &__sublogo {
+    letter-spacing: $ls-sublogo;
+    line-height: $lh-sublogo;
+    font-size: $fs-sm;
+  }
+
+  &__navigation {
+    @include media ('<desktop') {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__nav {
+    font-family: $f-chivo-bold;
+    letter-spacing: $ls-bn;
+    line-height: $lh-btn;
+    margin-bottom: 10px;
+    font-size: $fs-bn;
+  }
+
+  &__list {
+    font-family: $f-chivo-regular;
+    flex-direction: column;
+    line-height: 40px;
+    color: $c-daisy;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__connect {
+    flex-direction: column;
+    display: flex;
+
+    @include media ('<phone') {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__mail {
+    text-decoration: underline;
+    letter-spacing: $ls-mail;
+    line-height: $lh-mail;
+    font-size: $fs-quote;
+    margin: 10px 0 30px;
+    color: $c-daisy;
+
+    @include media ('<350px') {
+      font-size: $fs-bn;
+    }
+  }
+
+  &__address {
+    line-height: $lh-address;
+    letter-spacing: $ls-sm;
+    margin-bottom: 20px;
+  }
+
+  &__tel {
+    line-height: $lh-address;
+    letter-spacing: $ls-sm;
+  }
+
+  &__link {
+    display: flex;
+
+    &-wrapper {
+      background-color: $c-white;
+      border-radius: 50%;
+      margin-right: 30px;
+      @include size(50);
+
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      @include media ('<desktop') {
+        margin: 0 0 30px 0;
+      }
+
+      @include media ('<phone') {
+        margin: 0 30px 0 0;
+      }
+    }
+
+    &-social {
+      font-family: "Font Awesome 5 Brands";
+      justify-content: center;
+      line-height: $lh-sl-f;
+      align-items: center;
+      padding: 15px 17px;
+      font-size: $fs-sm;
+      display: flex;
+
+      & i {
+        font-style: normal;
+      }
+
+      &:hover {
+        transform: scale(1.3);
+      }
+
+      &--facebook {
+        color: $c-daisy;
+      }
+
+      &--twitter {
+        color: $c-blue-diamond;
+      }
+
+      &--instagram {
+        color: $c-lipstick;
+      }
+    }
+
+    @include media ('<desktop') {
+      flex-direction: column;
+    }
+
+    @include media ('<phone') {
+      flex-direction: row;
+      margin: 0 auto;
+    }
+  }
+}

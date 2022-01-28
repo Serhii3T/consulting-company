@@ -1,0 +1,82 @@
+.c-banner {
+
+  &__wrapper{
+    min-height: 590px;
+    display: flex;
+  }
+
+  &__wrap {
+    justify-content: space-between;
+    max-width: 635px;
+    display: flex;
+    width: 100%;
+  }
+
+  &__social-link {
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+  }
+
+  &__link {
+    font-family: "Font Awesome 5 Brands";
+    line-height: $lh-sl;
+    color: $c-silver;
+    font-size: 14px;
+
+    & i {
+      font-style: normal;
+    }
+
+    &:hover{
+      color: $c-daisy;
+    }
+  }
+
+  &__home{
+    max-width: 360px;
+  }
+
+  &__title{
+    margin-bottom: 40px;
+  }
+
+  &__subtitle{
+    margin-bottom: 60px;
+  }
+
+  &__buttons{
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__btn{
+    letter-spacing: $ls-sm;
+    line-height: $lh-btn;
+    border-radius: 20px;
+    min-width: 140px;
+
+    &--daisy{
+      background-color: $c-daisy;
+      color: $c-white;
+    }
+
+    &--peppermint{
+      background-color: $c-peppermint;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+  }
+
+  &__picture {
+    position: absolute;
+    max-height: 1075px;
+    max-width: 865px;
+    bottom: 15px;
+    right: 100px;
+    z-index: -1;
+  }
+}
