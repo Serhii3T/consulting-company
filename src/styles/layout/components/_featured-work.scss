@@ -1,0 +1,60 @@
+.c-featured-work {
+  background-image: url(featured-work-bg.png);
+  background-position: bottom right;
+  background-color: $c-albescent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 110px;
+  border-radius: 60px;
+  position: relative;
+  height: 720px;
+
+  @include media ('<1585px') {
+    background-image: none !important;
+    padding: 0 40px;
+    height: 100%;
+  }
+
+  &__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    padding-top: 140px;
+    max-width: 367px;
+  }
+
+  &__suptitle {
+    margin-bottom: 25px;
+    @include suptitle;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include media ('<phone') {
+      font-size: $fs-quote;
+    }
+  }
+
+  &__text {
+    letter-spacing: $ls-sm;
+    line-height: $lh-text;
+    margin-bottom: 50px;
+    color: $c-emperor;
+  }
+
+  &__btn {
+    background-color: $c-daisy;
+    border-radius: 19px;
+    max-width: 160px;
+    padding: 13px 0;
+    color: $c-white;
+    margin-bottom: 90px;
+  }
+
+  &__img {
+    max-width: 285px;
+  }
+}
