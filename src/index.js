@@ -17,7 +17,7 @@ if(sliderBlock != null) {
     let swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
-        loop: true,
+        // loop: true,
         init: false,
         grabCursor: true,
     });
