@@ -2,7 +2,7 @@
   &__wrapper {
     margin: 0 auto 50px;
     text-align: center;
-    max-width: 1260px;
+    max-width: 1240px;
     overflow: visible;
   }
   &__article {
@@ -29,13 +29,8 @@
   width: 100%;
 
   &-wrapper {
-    padding: 30px 45px 100px;
+    padding: 30px 0 100px;
     min-height: 360px;
-    max-width: 360px;
-  }
-
-  &-slide {
-    max-width: 370px ;
   }
 }
 
