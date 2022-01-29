@@ -1,0 +1,214 @@
+.c-services {
+  position: relative;
+  padding-top: 25px;
+
+  &__circle {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+
+    &--1 {
+      background-color: $c-daisy;
+      height: 48px;
+      width: 48px;
+      left: 43%;
+      top: 0;
+
+      @include media ('<1155px') {
+        top: -5%;
+      }
+    }
+
+    &--2 {
+      background-color: $c-albescent;
+      height: 34px;
+      width: 34px;
+      left: 5.5%;
+      top: 37%;
+    }
+
+    &--3 {
+      background-color: $c-peppermint;
+      height: 69px;
+      width: 69px;
+      left: 62.5%;
+      top: 57.5%;
+    }
+
+    &--4 {
+      background-color: $c-daisy;
+      height: 23px;
+      width: 23px;
+      right: 3%;
+      top: 82%;
+
+      @include media ('<1155px') {
+        top: 80%;
+      }
+    }
+  }
+
+  &__wrapper {
+    min-height: 675px;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+
+    @include media ('<1155px') {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__description {
+    padding: 115px 0 0 45px;
+    max-width: 546px;
+    width: 100%;
+
+    @include media ('<1155px') {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    & > .c-services-content {
+      float: left;
+
+      &--position {
+        float: right;
+      }
+
+      @include media ('<650px') {
+        float: none;
+      }
+    }
+  }
+
+  &__curve-drawing {
+    align-self: flex-end;
+    max-width: 90px;
+
+    @include media ('<1155px') {
+      align-self: center;
+      max-width: 100%;
+      margin: 30px 0;
+    }
+
+    &--vertical {
+      @include media ('<1155px') {
+        display: none;
+      }
+    }
+
+    &--horizontal {
+      display: none;
+
+      @include media ('<1154px') {
+        display: block;
+      }
+    }
+
+  }
+
+  &__service {
+    padding-left: 25px;
+    max-width: 455px;
+
+    @include media ('<1155px') {
+      padding: 0 10px;
+      margin: 0 auto;
+    }
+  }
+
+  &__suptitle {
+    margin-bottom: 20px;
+    @include suptitle;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include media ('<phone') {
+      font-size: $fs-quote;
+    }
+
+    &--red {
+      color: $c-lipstick;
+    }
+  }
+
+  &__text {
+    color: $c-silver;
+  }
+
+}
+
+.c-services-content {
+  margin-bottom: 50px;
+  max-width: 376px;
+  display: flex;
+
+  @include media ('<phone') {
+    flex-direction: column;
+    margin: 0 auto 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  &__icon {
+    font-family: "Font Awesome 5 Free - Solid";
+    background-color: $c-peppermint;
+    justify-content: center;
+    font-size: $fs-quote;
+    align-items: center;
+    border-radius: 35px;
+    line-height: $lh-sl;
+    margin-right: 35px;
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+
+    @include media ('<phone') {
+      margin: 0 0 20px;
+      justify-content: center;
+    }
+
+    & i {
+      color: $c-lipstick;
+    }
+
+    &--albescent {
+      background-color: $c-albescent;
+
+      & i {
+        color: $c-blue-diamond;
+      }
+    }
+
+    &--blue-chalk {
+      background-color: $c-blue-chalk;
+
+      & i {
+        color: $c-daisy;
+      }
+    }
+
+    & i {
+      font-style: normal;
+    }
+  }
+
+  &__title {
+    font-family: $f-chivo-bold;
+    letter-spacing: $ls-bn;
+    line-height: $lh-text;
+    margin-bottom: 20px;
+    font-size: $fs-bn;
+    color: $c-daisy;
+  }
+
+  &__text {
+    letter-spacing: $ls-sm;
+    line-height: $lh-text;
+    color: $c-silver;
+  }
+}
