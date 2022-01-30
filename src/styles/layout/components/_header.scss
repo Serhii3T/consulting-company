@@ -19,6 +19,10 @@
   &__navigation {
     align-items: center;
     display: flex;
+
+    @include media ('<800px') {
+      display: none;
+    }
   }
 
   &__btn {

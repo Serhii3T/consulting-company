@@ -3,6 +3,10 @@
   &__wrapper{
     min-height: 590px;
     display: flex;
+
+    @include media ('<desktop') {
+      flex-direction: column;
+    }
   }
 
   &__wrap {
@@ -10,12 +14,28 @@
     max-width: 635px;
     display: flex;
     width: 100%;
+
+    @include media ('<desktop') {
+      justify-content: center;
+      position: relative;
+      max-width: none;
+    }
   }
 
   &__social-link {
     justify-content: flex-end;
     flex-direction: column;
     display: flex;
+
+    @include  media ('<desktop') {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    @include media ('<600px') {
+      margin-right: 10px;
+    }
   }
 
   &__link {
@@ -34,11 +54,20 @@
   }
 
   &__home{
+    margin-bottom: 40px;
     max-width: 360px;
+
+    @include media ('<phone') {
+      text-align: center;
+    }
   }
 
   &__title{
     margin-bottom: 40px;
+
+    @include media ('<phone') {
+      font-size: $fs-quote;
+    }
   }
 
   &__subtitle{
@@ -48,6 +77,12 @@
   &__buttons{
     justify-content: space-between;
     display: flex;
+
+    @include media ('<550px') {
+      flex-direction: column;
+      width: fit-content;
+      margin: 0 auto;
+    }
   }
 
   &__btn{
@@ -59,6 +94,10 @@
     &--daisy{
       background-color: $c-daisy;
       color: $c-white;
+
+      @include media ('<550px') {
+        margin-bottom: 20px;
+      }
     }
 
     &--peppermint{
@@ -78,5 +117,13 @@
     bottom: 15px;
     right: 100px;
     z-index: -1;
+
+    @include media ('<1800px') {
+      right: 0;
+    }
+
+    @include media ('<desktop') {
+      position: static;
+    }
   }
 }

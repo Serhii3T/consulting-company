@@ -81,11 +81,21 @@
   &__logo{
     font-family: "Font Awesome 5 Brands";
     font-size: $fs-quote;
+
+    @include media ('<300px') {
+      justify-content: space-between;
+      display: flex;
+    }
   }
 
   &__link {
     margin-right: 35px;
     line-height: 36px;
+
+    @include media ('<300px') {
+      display: block;
+      margin: 0;
+    }
 
     & i {
       font-style: normal;
