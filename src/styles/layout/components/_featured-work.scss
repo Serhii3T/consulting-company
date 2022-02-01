@@ -3,8 +3,8 @@
   background-position: bottom right;
   background-color: $c-albescent;
   background-repeat: no-repeat;
+  margin: 55px auto 110px;
   background-size: cover;
-  margin-bottom: 110px;
   border-radius: 60px;
   position: relative;
   height: 720px;
@@ -15,14 +15,40 @@
     height: 100%;
   }
 
+  @include media ('<tablet') {
+    padding: 0 20px;
+  }
+
   &__wrapper {
     max-width: 1170px;
     margin: 0 auto;
+
+    @include media ('<1585px') {
+      justify-content: space-between;
+      display: flex;
+    }
+
+    @include media ('<desktop') {
+      flex-direction: column;
+    }
   }
 
   &__content {
     padding-top: 140px;
     max-width: 367px;
+
+    @include media ('<1585px') {
+      max-width: 600px;
+    }
+
+    @include media ('<desktop') {
+      padding-top: 30px ;
+      margin: 0 auto;
+    }
+
+    @include media ('<phone') {
+      text-align: center;
+    }
   }
 
   &__suptitle {
@@ -48,13 +74,25 @@
   &__btn {
     background-color: $c-daisy;
     border-radius: 19px;
+    margin-bottom: 90px;
     max-width: 160px;
     padding: 13px 0;
     color: $c-white;
-    margin-bottom: 90px;
+
+    @include media ('<phone') {
+      margin: 0 auto 45px;
+    }
   }
 
   &__img {
     max-width: 285px;
+
+    @include media ('<1585px') {
+      margin: auto 0;
+    }
+
+    @include media ('<desktop') {
+      margin: 0 auto;
+    }
   }
 }

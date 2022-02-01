@@ -44,6 +44,10 @@ body {
     overflow: hidden;
     height: 100%;
   }
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 .icon {
@@ -106,6 +110,10 @@ body {
   @include containerGlobal;
   position: relative;
   overflow: hidden;
+
+  @include media ('<desktop') {
+    padding: 30px;
+  }
 
   @include media ("<phone") {
     padding: 10px;

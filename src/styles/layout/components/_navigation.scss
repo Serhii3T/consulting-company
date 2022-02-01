@@ -8,5 +8,9 @@
 
   &__item {
     margin-right: 45px;
+
+    @include media ('<800px') {
+      margin-right: 0;
+    }
   }
 }

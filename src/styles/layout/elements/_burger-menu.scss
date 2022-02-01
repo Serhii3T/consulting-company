@@ -1,0 +1,25 @@
+.e-burger-menu {
+  cursor: pointer;
+
+  &__bar {
+    background-color: $c-black;
+    transition: $t-normal;
+    border-radius: 20px;
+    margin: 5px auto;
+    display: block;
+    height: 3px;
+    width: 25px;
+  }
+
+  &.active &__bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  &.active &__bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.active &__bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

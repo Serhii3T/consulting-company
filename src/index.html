@@ -11,13 +11,16 @@
     <!--  fontawesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!--    <link rel="import" href="about.html">-->
+
     <!--  title  -->
     <title>Test Task</title>
   </head>
 
   <body>
     <div id="root"></div>
-
+    <div class="bg-overlay"></div>
+    <div class="popup" id="popup"></div>
     <div class="l-common">
 
       <!--    header    -->
@@ -34,11 +37,11 @@
               <!--        navigation        -->
               <div class="c-header__navigation">
                 <nav class="c-navigation">
-                  <ul class="c-navigation__list">
-                    <li class="c-navigation__item"><a href="#">Home</a></li>
-                    <li class="c-navigation__item"><a href="#">About</a></li>
-                    <li class="c-navigation__item"><a href="#">Work</a></li>
-                    <li class="c-navigation__item"><a href="#">Contact</a></li>
+                  <ul class="c-navigation__list" id="menu">
+                    <li class="c-navigation__item"><a href="./index.html">Home</a></li>
+                    <li class="c-navigation__item"><a href="./about.html">About</a></li>
+                    <li class="c-navigation__item"><a href="./work.html">Work</a></li>
+                    <li class="c-navigation__item"><a href="./connect.html">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -49,479 +52,515 @@
             <a href="#" class="e-link">Get Start</a>
           </div>
 
+          <!--    burger menu      -->
+          <div class="c-header__burger">
+            <div class="e-burger-menu" id="burger">
+              <span class="e-burger-menu__bar"></span>
+              <span class="e-burger-menu__bar"></span>
+              <span class="e-burger-menu__bar"></span>
+            </div>
+          </div>
+
         </div>
       </header>
 
-      <!--   banner   -->
-      <div class="c-banner">
-        <div class="c-banner__wrapper container">
+      <!--   main   -->
+      <main class="c-main">
 
-          <div class="c-banner__wrap">
+        <!--    page home    -->
+        <div class="c-page-home">
 
-            <!--    social link      -->
-            <div class="c-banner__social-link">
-              <a href="" class="c-banner__link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-              <a href="" class="c-banner__link" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-              <a href="" class="c-banner__link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <!--   banner   -->
+          <section class="c-banner">
+            <div class="c-banner__wrapper container">
+
+              <div class="c-banner__wrap">
+
+                <!--    social link      -->
+                <div class="c-banner__social-link">
+                  <a href="" class="c-banner__link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="" class="c-banner__link" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="" class="c-banner__link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <!--    text banner      -->
+                <div class="c-banner__home">
+
+                  <!--      title      -->
+                  <h1 class="c-banner__title">We are ready to assist our clients</h1>
+
+                  <!--      subtitle      -->
+                  <p class="c-banner__subtitle">Vestibulum imperdiet nibh vel magna lacinia
+                    ultrices. Sed id interdum urna</p>
+
+                  <!--      btns     -->
+                  <div class="c-banner__buttons">
+                    <a href="#" class="c-banner__btn c-banner__btn--daisy e-link ">Get Start</a>
+                    <a href="#" class="c-banner__btn c-banner__btn--peppermint e-link">How it Work</a>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              <!--    img bg      -->
+              <div class="c-banner__img">
+                <img src="./assets/home-banner.png" alt="coder" class="c-banner__picture">
+              </div>
+
+            </div>
+          </section>
+
+          <!--    about    -->
+          <section class="c-about">
+            <div class="c-about__wrapper">
+
+              <!--      picture      -->
+              <div class="c-about__img">
+                <img src="./assets/about.png" alt="girl-support">
+              </div>
+
+              <!--      info      -->
+              <div class="c-about__info">
+
+                <!--      suptitle        -->
+                <p class="c-about__suptitle">
+                  WHO WE ARE
+                </p>
+
+                <!--      title        -->
+                <h2 class="c-about__title">
+                  An independent consulting firm
+                </h2>
+
+                <!--      text info       -->
+                <p class="c-about__text">
+                  Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna,condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tate, tortor nec commodo ultricies, vitae viverra urna .
+                </p>
+
+                <!--      logo brands        -->
+                <div class="c-about__firm-logo">
+                  <p class="c-about__firm">
+                    Trusted thounds <br> of diverse companies
+                  </p>
+                  <div class="c-about__logo">
+                    <a href="https://angrycreative.com/" class="c-about__link"><i class="fa-brands fa-angrycreative"></i></a>
+                    <a href="https://firstdraft.org.au/" class="c-about__link"><i class="fa-brands fa-firstdraft"></i></a>
+                    <a href="https://mailchimp.com/" class="c-about__link"><i class="fa-brands fa-mailchimp"></i></a>
+                    <a href="https://www.meetup.com/ru-RU/" class="c-about__link"><i class="fa-brands fa-meetup"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
 
-            <!--    text banner      -->
-            <div class="c-banner__home">
+          </section>
+
+          <!--    our-mission    -->
+          <section class="c-our-mission">
+            <div class="c-our-mission__wrapper">
+
+              <!--      article      -->
+              <div class="c-our-mission__article">
+                <p class="c-our-mission__suptitle">Our Mission</p>
+                <h2 class="c-our-mission__title">We want to contribute to the <span class="c-our-mission__title--red">creation</span> of valua</h2>
+              </div>
+
+              <!--      slider      -->
+              <div class="c-our-mission__slider">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-money.png" alt="money">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Accountancy</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-support.png" alt="support">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Corporate Finance</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Nullam lacinia faucibus risus, a euismod lorem tincidunt id.
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-no_message.png" alt="message">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Tax & Legal</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-money.png" alt="money">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Accountancy</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-support.png" alt="support">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Corporate Finance</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Nullam lacinia faucibus risus, a euismod lorem tincidunt id.
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-no_message.png" alt="message">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Tax & Legal</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-money.png" alt="money">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Accountancy</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-support.png" alt="support">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Corporate Finance</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Nullam lacinia faucibus risus, a euismod lorem tincidunt id.
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="c-cart">
+                        <div class="c-cart__wrapper">
+
+                          <!--  img  -->
+                          <div class="c-cart__img">
+                            <img src="./assets/our-mission-no_message.png" alt="message">
+                          </div>
+                          <!--  title  -->
+                          <h6 class="c-cart__title">Tax & Legal</h6>
+                          <!--  subtitle  -->
+                          <p class="c-cart__subtitle">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra
+                          </p>
+                          <!--  btn  -->
+                          <div class="c-cart__wrap-btn">
+                            <a href="#" class="c-cart__btn e-link">Get Start</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!--    featured-work    -->
+          <section class="c-featured-work" >
+            <div class="c-featured-work__wrapper">
+
+              <div class="c-featured-work__content">
+                <p class="c-featured-work__suptitle">Featured Work</p>
+                <h2 class="c-featured-work__title">The personal Finance App</h2>
+                <p class="c-featured-work__text">
+                  Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna condimentum a vehicula a, hendrerit ac nisi.
+                </p>
+                <a href="#" class="c-featured-work__btn e-link">View Project</a>
+              </div>
+              <div class="c-featured-work__img">
+                <img src="./assets/featured-work-searching.png" alt="search">
+              </div>
+
+            </div>
+          </section>
+
+          <!--    services    -->
+          <section class="c-services">
+
+            <!--      circle        -->
+            <div class="c-services__circle c-services__circle--1"></div>
+            <div class="c-services__circle c-services__circle--2"></div>
+            <div class="c-services__circle c-services__circle--3"></div>
+            <div class="c-services__circle c-services__circle--4"></div>
+
+            <div class="c-services__wrapper">
+
+              <!--      description      -->
+              <div class="c-services__description">
+
+                <!--      block content        -->
+                <div class="c-services-content">
+                  <div class="c-services-content__icon">
+                    <i class="fa-solid fa-chart-pie"></i>
+                  </div>
+                  <div class="c-services-content__article">
+                    <p class="c-services-content__title">Business Strategy</p>
+                    <p class="c-services-content__text">Imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. </p>
+                  </div>
+                </div>
+
+                <!--      block content        -->
+                <div class="c-services-content c-services-content--position">
+                  <div class="c-services-content__icon c-services-content__icon--albescent">
+                    <i class="fa-solid fa-dice"></i>
+                  </div>
+                  <div class="c-services-content__article">
+                    <p class="c-services-content__title">Business Strategy</p>
+                    <p class="c-services-content__text">Imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. </p>
+                  </div>
+                </div>
+
+                <!--      block content        -->
+                <div class="c-services-content">
+                  <div class="c-services-content__icon c-services-content__icon--blue-chalk">
+                    <i class="fa-solid fa-rocket"></i>
+                  </div>
+                  <div class="c-services-content__article">
+                    <p class="c-services-content__title">Business Strategy</p>
+                    <p class="c-services-content__text">Imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!--      curve-drawing      -->
+              <div class="c-services__curve-drawing">
+                <img src="./assets/services_curve_drawing.png" alt="curve drawing" class="c-services__curve-drawing--vertical">
+                <img src="./assets/services_curve_drawing-rotate.png" alt="curve drawing" class="c-services__curve-drawing--horizontal">
+              </div>
+
+              <!--      service      -->
+              <div class="c-services__service">
+                <p class="c-services__suptitle">Amazing Services</p>
+                <h2 class="c-services__title">We provide smart and effective <span class="c-services__title--red">solutions</span></h2>
+                <p class="c-services__text">
+                  Nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna,condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tate, tortor nec commodo ultricies, vitae viverra urna .
+                </p>
+              </div>
+
+            </div>
+          </section>
+
+          <!--    comment    -->
+          <section class="c-comment">
+
+            <!--    circles      -->
+            <div class="c-comment__circle c-comment__circle--1">
+              <img src="./assets/comment-your_image_here-1.png" alt="man">
+            </div>
+            <div class="c-comment__circle c-comment__circle--2">
+              <img src="./assets/comment-your_image_here-2.png" alt="woman">
+            </div>
+            <div class="c-comment__circle c-comment__circle--3">
+              <img src="./assets/comment-your_image_here-3.png" alt="woman">
+            </div>
+            <div class="c-comment__circle c-comment__circle--4">
+              <img src="./assets/comment-your_image_here-4.png" alt="woman">
+            </div>
+            <div class="c-comment__circle c-comment__circle--5">
+              <img src="./assets/comment-your_image_here-5.png" alt="man">
+            </div>
+            <div class="c-comment__circle c-comment__circle--6">
+              <img src="./assets/comment-your_image_here-6.png" alt="woman">
+            </div>
+            <div class="c-comment__circle c-comment__circle--7">
+              <img src="./assets/comment-your_image_here-7.png" alt="woman">
+            </div>
+            <div class="c-comment__circle c-comment__circle--8">
+              <img src="./assets/comment-your_image_here-8.png" alt="woman">
+            </div>
+
+            <div class="c-comment__wrapper">
+
+              <!--      quote      -->
+              <q class="c-comment__quote">
+                Hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tate, tortor nec commodo ultricies vitae viverra urna.
+              </q>
+              <!--      author      -->
+              <div class="c-comment__author">
+                <a rel="author" target="_blank" href="https://www.linkedin.com/in/tiennd/?originalSubdomain=vn" class="c-comment__author--bold">Tony Nguyen</a>
+                <span class="c-comment__author--gray"> - Ceo Moontheme</span>
+              </div>
+              <!--      img      -->
+              <div class="c-comment__img">
+                <img src="./assets/comment-sm_curve_drawing.png" alt="curve drawing">
+              </div>
+
+            </div>
+          </section>
+
+          <!--    newsletter    -->
+          <section class="c-newsletter">
+            <div class="c-newsletter__wrapper">
 
               <!--      title      -->
-              <h1 class="c-banner__title">We are ready to assist our clients</h1>
-
+              <h2 class="c-newsletter__title">
+                Get everything you need <span class="c-newsletter__title--red">to succeed!</span>
+              </h2>
               <!--      subtitle      -->
-              <p class="c-banner__subtitle">Vestibulum imperdiet nibh vel magna lacinia
-                ultrices. Sed id interdum urna</p>
+              <p class="c-newsletter__subtitle">
+                Join the newsletter and get 2 months free with full access.
+              </p>
+              <!--      form submit      -->
+              <form action="" method="post" class="c-newsletter__form">
+                <input type="email" name="mail" placeholder="Email address" id="input-mail" class="c-newsletter__input">
+                <button type="submit" onclick="event.preventDefault()" class="c-newsletter__btn">Subscribe</button>
+              </form>
 
-              <!--      btns     -->
-              <div class="c-banner__buttons">
-                <a href="#" class="c-banner__btn c-banner__btn--daisy e-link ">Get Start</a>
-                <a href="#" class="c-banner__btn c-banner__btn--peppermint e-link">How it Work</a>
-              </div>
             </div>
-
-
-
-          </div>
-
-          <!--    img bg      -->
-          <div class="c-banner__img">
-            <img src="./assets/home-banner.png" alt="coder" class="c-banner__picture">
-          </div>
+          </section>
 
         </div>
-      </div>
 
-      <!--   main   -->
-      <main class="main">
+        <!--    page about    -->
+        <div class="c-page-about">
 
-        <!--    about    -->
-        <section class="c-about">
-          <div class="c-about__wrapper">
 
-            <!--      picture      -->
-            <div class="c-about__img">
-              <img src="./assets/about.png" alt="girl-support">
-            </div>
 
-            <!--      info      -->
-            <div class="c-about__info">
+        </div>
 
-              <!--      suptitle        -->
-              <p class="c-about__suptitle">
-                WHO WE ARE
-              </p>
+        <!--    page work    -->
+        <div class="c-page-work">
 
-              <!--      title        -->
-              <h2 class="c-about__title">
-                An independent consulting firm
-              </h2>
 
-              <!--      text info       -->
-              <p class="c-about__text">
-                Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna,condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tate, tortor nec commodo ultricies, vitae viverra urna .
-              </p>
 
-              <!--      logo brands        -->
-              <div class="c-about__firm-logo">
-                <p class="c-about__firm">
-                  Trusted thounds <br> of diverse companies
-                </p>
-                <div class="c-about__logo">
-                  <a href="https://angrycreative.com/" class="c-about__link"><i class="fa-brands fa-angrycreative"></i></a>
-                  <a href="https://firstdraft.org.au/" class="c-about__link"><i class="fa-brands fa-firstdraft"></i></a>
-                  <a href="https://mailchimp.com/" class="c-about__link"><i class="fa-brands fa-mailchimp"></i></a>
-                  <a href="https://www.meetup.com/ru-RU/" class="c-about__link"><i class="fa-brands fa-meetup"></i></a>
-                </div>
-              </div>
+        </div>
 
-            </div>
+        <!--    page contact    -->
+        <div class="c-page-contact">
 
-          </div>
 
-        </section>
 
-        <!--    our-mission    -->
-        <section class="c-our-mission">
-          <div class="c-our-mission__wrapper">
+        </div>
 
-            <!--      article      -->
-            <div class="c-our-mission__article">
-              <p class="c-our-mission__suptitle">Our Mission</p>
-              <h2 class="c-our-mission__title">We want to contribute to the <span class="c-our-mission__title--red">creation</span> of valua</h2>
-            </div>
-
-            <!--      slider      -->
-            <div class="c-our-mission__slider">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-money.png" alt="money">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Accountancy</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-                        
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-support.png" alt="support">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Corporate Finance</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Nullam lacinia faucibus risus, a euismod lorem tincidunt id.
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-no_message.png" alt="message">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Tax & Legal</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-money.png" alt="money">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Accountancy</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-support.png" alt="support">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Corporate Finance</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Nullam lacinia faucibus risus, a euismod lorem tincidunt id.
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-no_message.png" alt="message">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Tax & Legal</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-money.png" alt="money">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Accountancy</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-support.png" alt="support">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Corporate Finance</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Nullam lacinia faucibus risus, a euismod lorem tincidunt id.
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="c-cart">
-                      <div class="c-cart__wrapper">
-
-                        <!--  img  -->
-                        <div class="c-cart__img">
-                          <img src="./assets/our-mission-no_message.png" alt="message">
-                        </div>
-                        <!--  title  -->
-                        <h6 class="c-cart__title">Tax & Legal</h6>
-                        <!--  subtitle  -->
-                        <p class="c-cart__subtitle">
-                          Class aptent taciti sociosqu ad litora torquent per conubia nostra
-                        </p>
-                        <!--  btn  -->
-                        <div class="c-cart__wrap-btn">
-                          <a href="#" class="c-cart__btn e-link">Get Start</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!--    featured-work    -->
-        <section class="c-featured-work" >
-          <div class="c-featured-work__wrapper">
-
-            <div class="c-featured-work__content">
-              <p class="c-featured-work__suptitle">Featured Work</p>
-              <h2 class="c-featured-work__title">The personal Finance App</h2>
-              <p class="c-featured-work__text">
-                Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna condimentum a vehicula a, hendrerit ac nisi.
-              </p>
-              <a href="#" class="c-featured-work__btn e-link">View Project</a>
-            </div>
-            <div class="c-featured-work__img">
-              <img src="./assets/featured-work-searching.png" alt="search">
-            </div>
-
-          </div>
-        </section>
-
-        <!--    services    -->
-        <section class="c-services">
-
-          <!--      circle        -->
-          <div class="c-services__circle c-services__circle--1"></div>
-          <div class="c-services__circle c-services__circle--2"></div>
-          <div class="c-services__circle c-services__circle--3"></div>
-          <div class="c-services__circle c-services__circle--4"></div>
-
-          <div class="c-services__wrapper">
-
-            <!--      description      -->
-            <div class="c-services__description">
-
-              <!--      block content        -->
-              <div class="c-services-content">
-                <div class="c-services-content__icon">
-                  <i class="fa-solid fa-chart-pie"></i>
-                </div>
-                <div class="c-services-content__article">
-                  <p class="c-services-content__title">Business Strategy</p>
-                  <p class="c-services-content__text">Imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. </p>
-                </div>
-              </div>
-
-              <!--      block content        -->
-              <div class="c-services-content c-services-content--position">
-                <div class="c-services-content__icon c-services-content__icon--albescent">
-                  <i class="fa-solid fa-dice"></i>
-                </div>
-                <div class="c-services-content__article">
-                  <p class="c-services-content__title">Business Strategy</p>
-                  <p class="c-services-content__text">Imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. </p>
-                </div>
-              </div>
-
-              <!--      block content        -->
-              <div class="c-services-content">
-                <div class="c-services-content__icon c-services-content__icon--blue-chalk">
-                  <i class="fa-solid fa-rocket"></i>
-                </div>
-                <div class="c-services-content__article">
-                  <p class="c-services-content__title">Business Strategy</p>
-                  <p class="c-services-content__text">Imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna. </p>
-                </div>
-              </div>
-
-            </div>
-
-            <!--      curve-drawing      -->
-            <div class="c-services__curve-drawing">
-              <img src="./assets/services_curve_drawing.png" alt="curve drawing" class="c-services__curve-drawing--vertical">
-              <img src="./assets/services_curve_drawing-rotate.png" alt="curve drawing" class="c-services__curve-drawing--horizontal">
-            </div>
-
-            <!--      service      -->
-            <div class="c-services__service">
-              <p class="c-services__suptitle">Amazing Services</p>
-              <h2 class="c-services__title">We provide smart and effective <span class="c-services__title--red">solutions</span></h2>
-              <p class="c-services__text">
-                Nibh vel magna lacinia ultrices. Sed id interdum urna. Nam ac elit a ante commodo tristique. Duis lacus urna,condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tate, tortor nec commodo ultricies, vitae viverra urna .
-              </p>
-            </div>
-
-          </div>
-        </section>
-
-        <!--    comment    -->
-        <section class="c-comment">
-          
-          <!--    circles      -->
-          <div class="c-comment__circle c-comment__circle--1">
-            <img src="./assets/comment-your_image_here-1.png" alt="man">
-          </div>
-          <div class="c-comment__circle c-comment__circle--2">
-            <img src="./assets/comment-your_image_here-2.png" alt="woman">
-          </div>
-          <div class="c-comment__circle c-comment__circle--3">
-            <img src="./assets/comment-your_image_here-3.png" alt="woman">
-          </div>
-          <div class="c-comment__circle c-comment__circle--4">
-            <img src="./assets/comment-your_image_here-4.png" alt="woman">
-          </div>
-          <div class="c-comment__circle c-comment__circle--5">
-            <img src="./assets/comment-your_image_here-5.png" alt="man">
-          </div>
-          <div class="c-comment__circle c-comment__circle--6">
-            <img src="./assets/comment-your_image_here-6.png" alt="woman">
-          </div>
-          <div class="c-comment__circle c-comment__circle--7">
-            <img src="./assets/comment-your_image_here-7.png" alt="woman">
-          </div>
-          <div class="c-comment__circle c-comment__circle--8">
-            <img src="./assets/comment-your_image_here-8.png" alt="woman">
-          </div>
-
-          <div class="c-comment__wrapper">
-
-            <!--      quote      -->
-            <q class="c-comment__quote">
-               Hendrerit ac nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tate, tortor nec commodo ultricies vitae viverra urna.
-            </q>
-            <!--      author      -->
-            <div class="c-comment__author">
-              <a rel="author" target="_blank" href="https://www.linkedin.com/in/tiennd/?originalSubdomain=vn" class="c-comment__author--bold">Tony Nguyen</a>
-              <span class="c-comment__author--gray"> - Ceo Moontheme</span>
-            </div>
-            <!--      img      -->
-            <div class="c-comment__img">
-              <img src="./assets/comment-sm_curve_drawing.png" alt="curve drawing">
-            </div>
-            
-          </div>
-        </section>
-
-        <!--    newsletter    -->
-        <section class="c-newsletter">
-          <div class="c-newsletter__wrapper">
-
-            <!--      title      -->
-            <h2 class="c-newsletter__title">
-              Get everything you need <span class="c-newsletter__title--red">to succeed!</span>
-            </h2>
-            <!--      subtitle      -->
-            <p class="c-newsletter__subtitle">
-              Join the newsletter and get 2 months free with full access.
-            </p>
-            <!--      form submit      -->
-            <form action="" method="post" class="c-newsletter__form">
-              <input type="email" name="mail" placeholder="Email address" id="input-mail" class="c-newsletter__input">
-              <button type="submit" onclick="event.preventDefault()" class="c-newsletter__btn">Subscribe</button>
-            </form>
-
-          </div>
-        </section>
 
       </main>
 

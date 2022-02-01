@@ -1,4 +1,5 @@
 .c-services {
+  margin: 0 auto 10px;
   position: relative;
   padding-top: 25px;
 
@@ -65,6 +66,7 @@
     width: 100%;
 
     @include media ('<1155px') {
+      max-width: 700px;
       margin: 0 auto;
       padding: 0;
     }
@@ -113,8 +115,13 @@
     max-width: 455px;
 
     @include media ('<1155px') {
+      max-width: 700px;
       padding: 0 10px;
       margin: 0 auto;
+    }
+
+    @include media ('<phone') {
+      text-align: center;
     }
   }
 

@@ -1,9 +1,10 @@
 .c-our-mission {
   &__wrapper {
-    margin: 0 auto 50px;
     text-align: center;
     max-width: 1240px;
     overflow: visible;
+    padding: 70px 0 0;
+    margin: 0 auto;
   }
   &__article {
     max-width: 655px;
@@ -20,6 +21,10 @@
 
     &--red {
       color: $c-lipstick;
+    }
+
+    @include media ('<phone') {
+      font-size: $fs-quote;
     }
   }
 }
