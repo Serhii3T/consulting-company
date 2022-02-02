@@ -1,0 +1,136 @@
+.c-clients {
+  padding: 70px 0;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__suptitle {
+    margin-bottom: 20px;
+    @include suptitle;
+  }
+
+  &__title {
+    margin: 0 auto 70px;
+    max-width: 685px;
+
+    @include media ('<phone') {
+      font-size: $fs-quote;
+    }
+
+    &--red {
+      color: $c-lipstick;
+    }
+  }
+
+  &__brands {
+    justify-content: space-between;
+    margin-bottom: 40px;
+    min-height: 170px;
+    flex-wrap: wrap;
+    display: flex;
+
+    @include media ('<phone') {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    font-family: "Font Awesome 5 Brands";
+    border: 1px solid $c-albescent;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    line-height: $lh-sl;
+    min-height: 170px;
+    font-size: $fs-h2;
+    max-width: 170px;
+    margin: 0 10px;
+    display: flex;
+    width: 100%;
+
+    &:last-child {
+
+      @include media ('<1161px') {
+        margin: 0 auto;
+      }
+
+      @include media ('<1016px') {
+        margin: 0 10px 15px;
+      }
+    }
+
+    &:hover {
+      box-shadow: $bs-brands;
+      color: $c-daisy;
+    }
+
+    @include media ('<1161px') {
+      margin-bottom: 15px;
+    }
+
+    @include media ('<phone') {
+      max-width: 100px;
+      min-height: 100px;
+    }
+  }
+
+  &__curve {
+    margin: 0 auto 80px;
+    max-width: 51px;
+  }
+
+  &__start {
+    max-width: 455px;
+    margin: 0 auto;
+  }
+
+  &__article {
+    margin-bottom: 25px;
+
+    @include media ('<phone') {
+      font-size: $fs-quote;
+    }
+  }
+
+  &__text {
+    line-height: $lh-address;
+    letter-spacing: $ls-bn;
+    margin-bottom: 45px;
+    color: $c-silver;
+  }
+
+  &__btn {
+    justify-content: center;
+    display: flex;
+
+    @include media ('<phone') {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    letter-spacing: $ls-sm;
+    line-height: $lh-btn;
+    border-radius: 19px;
+    max-width: 160px;
+    width: 100%;
+
+    @include media ('<phone') {
+      margin: 0 auto;
+    }
+
+    &--daisy {
+      background-color: $c-daisy;
+      margin-right: 30px;
+
+      @include media ('<phone') {
+        margin: 0 auto 20px;
+      }
+    }
+
+    &--peppermint {
+      background-color: $c-peppermint;
+    }
+  }
+}
