@@ -1,0 +1,101 @@
+.c-firm {
+  padding: 55px 0;
+
+  &__wrapper {
+    justify-content: space-between;
+    display: flex;
+
+    @include media ('<desktop') {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    max-width: 365px;
+
+    @include media ('<desktop') {
+      margin: 0 auto 20px;
+      text-align: center;
+      max-width: 650px;
+    }
+
+    @include media ('<phone') {
+      font-size: $fs-quote;
+    }
+  }
+
+  &__content {
+    color: $c-silver;
+    max-width: 570px;
+
+    @include media ('<desktop') {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+  }
+
+  &__text {
+    letter-spacing: $ls-sm;
+    line-height: $lh-text;
+    margin-bottom: 50px;
+
+  }
+
+  &__firm-logo{
+    display: flex;
+
+    @include media ('<desktop') {
+      justify-content: space-between;
+    }
+
+    @include media ('<525px') {
+      flex-direction: column;
+    }
+  }
+
+  &__firm{
+    letter-spacing: $ls-sublogo;
+    font-family: $f-chivo-bold;
+    text-transform: uppercase;
+    line-height: $lh-sl-f;
+    margin-right: 80px;
+    font-size: $fs-sm;
+
+    @include media ('<800px') {
+      margin: 0 20px 0 0;
+    }
+
+    @include media ('<525px') {
+      margin: 0 auto 15px;
+      text-align: center;
+    }
+  }
+
+  &__logo{
+    font-family: "Font Awesome 5 Brands";
+    font-size: $fs-quote;
+
+    @include media ('<525px') {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    @include media ('<300px') {
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+
+  &__link {
+    margin-right: 35px;
+    line-height: 36px;
+
+    & i {
+      font-style: normal;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
