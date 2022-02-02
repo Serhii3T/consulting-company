@@ -1,0 +1,72 @@
+.c-work {
+
+  &__wrapper {
+    padding: 80px 0 55px;
+
+    @include media ('<tablet') {
+      padding: 40px 0 30px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 25px;
+  }
+
+  &__tab {
+    justify-content: space-between;
+    display: flex;
+
+    @include media('<tablet') {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    @include media ('<tablet') {
+      margin: 0 auto 25px;
+    }
+
+    @include media ('<phone') {
+      font-size: $fs-h2;
+    }
+  }
+
+
+  &__menu {
+    align-items: flex-end;
+    display: flex;
+
+    @include media ('<tablet') {
+      margin: 0 auto;
+    }
+  }
+
+  &__nav {
+    font-family: $f-chivo-bold;
+    letter-spacing: $ls-sm;
+    color: $c-silver;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 20px;
+
+    &.active {
+      color: $c-daisy;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $c-daisy;
+    }
+
+    @include media ('<tablet') {
+      text-align: center;
+    }
+  }
+}
+

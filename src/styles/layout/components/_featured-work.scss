@@ -54,6 +54,10 @@
   &__suptitle {
     margin-bottom: 25px;
     @include suptitle;
+
+    @include media ('<tablet') {
+      text-align: center;
+    }
   }
 
   &__title {

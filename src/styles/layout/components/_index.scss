@@ -2,7 +2,7 @@
 @import 'header';
 @import 'footer';
 
-// Home
+// Home page
 @import 'navigation';
 @import 'banner';
 @import 'about';
@@ -12,8 +12,12 @@
 @import 'comment';
 @import 'newsletter';
 
-// About
+// About page
 @import './about/about-banner';
 @import './about/firm';
 @import './about/forward';
 @import './about/clients';
+
+// Work page
+@import './work/work';
+@import './work/chapter';

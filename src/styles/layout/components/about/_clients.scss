@@ -123,6 +123,7 @@
     &--daisy {
       background-color: $c-daisy;
       margin-right: 30px;
+      color: $c-white;
 
       @include media ('<phone') {
         margin: 0 auto 20px;

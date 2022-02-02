@@ -1,0 +1,74 @@
+.c-chapter {
+
+  &__wrapper {}
+
+  &__part {}
+
+  &__block {
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px;
+    position: relative;
+    margin: 50px auto;
+    min-height: 720px;
+
+    @include media ('<1585px') {
+      background-image: none !important;
+      padding: 0 40px;
+      height: 100%;
+    }
+
+    @include media ('<tablet') {
+      padding: 0 20px;
+    }
+
+    &--bg1 {
+      background-image: url(featured-work-bg.png);
+      background-color: $c-albescent;
+    }
+
+    &--bg2 {
+      background-image: url(work-bg2.png);
+      background-color: $c-peppermint;
+    }
+
+    &--bg3 {
+      background-image: url(work-bg3.png);
+      background-color: $c-blue-chalk;
+    }
+
+    &--bg4 {
+      background-image: url(work-bg4.png);
+      background-color: $c-alabaster;
+    }
+
+    &--bg5 {
+      background-image: url(featured-work-bg.png);
+      background-color: $c-albescent;
+    }
+  }
+
+  &__btn {
+    letter-spacing: $ls-sublogo;
+    font-family: $f-chivo-bold;
+    justify-content: center;
+    margin: 50px auto 30px;
+    font-size: $fs-sm;
+    color: $c-daisy;
+    display: flex;
+  }
+
+  &__img {
+    display: none;
+
+    @include media ('<1585px') {
+      border-bottom-right-radius: 60px;
+      position: absolute;
+      max-width: 600px;
+      display: block;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
