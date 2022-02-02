@@ -1,5 +1,6 @@
 .c-header {
-  margin-bottom: 175px;
+  //margin-bottom: 175px;
+  margin-bottom: 60px;  // about page
 
   @include media ('<desktop') {
     margin-bottom: 50px;

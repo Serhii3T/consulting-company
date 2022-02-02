@@ -1,4 +1,8 @@
+// Global
 @import 'header';
+@import 'footer';
+
+// Home
 @import 'navigation';
 @import 'banner';
 @import 'about';
@@ -7,4 +11,6 @@
 @import 'services';
 @import 'comment';
 @import 'newsletter';
-@import 'footer';
+
+// About
+@import './about/about-banner';
