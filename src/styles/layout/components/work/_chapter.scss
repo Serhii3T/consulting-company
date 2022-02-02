@@ -12,6 +12,11 @@
     position: relative;
     margin: 50px auto;
     min-height: 720px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
 
     @include media ('<1585px') {
       background-image: none !important;
@@ -24,27 +29,27 @@
     }
 
     &--bg1 {
-      background-image: url(featured-work-bg.png);
+      background-image: url(../images/featured-work-bg.png);
       background-color: $c-albescent;
     }
 
     &--bg2 {
-      background-image: url(work-bg2.png);
+      background-image: url(../images/work-bg2.png);
       background-color: $c-peppermint;
     }
 
     &--bg3 {
-      background-image: url(work-bg3.png);
+      background-image: url(../images/work-bg3.png);
       background-color: $c-blue-chalk;
     }
 
     &--bg4 {
-      background-image: url(work-bg4.png);
+      background-image: url(../images/work-bg4.png);
       background-color: $c-alabaster;
     }
 
     &--bg5 {
-      background-image: url(featured-work-bg.png);
+      background-image: url(../images/featured-work-bg.png);
       background-color: $c-albescent;
     }
   }
@@ -56,6 +61,7 @@
     margin: 50px auto 30px;
     font-size: $fs-sm;
     color: $c-daisy;
+    cursor: pointer;
     display: flex;
   }
 

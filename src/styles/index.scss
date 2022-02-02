@@ -1,8 +1,8 @@
-@import 'variables';
-@import 'fonts';
-@import 'mixins';
-@import 'media';
-@import 'main';
+@import "variables";
+@import "mixins";
+@import "media";
+@import "fonts";
+@import "global";
 
 @import './layout/components/index';
 @import './layout/elements/index';

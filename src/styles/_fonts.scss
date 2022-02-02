@@ -1,19 +1,43 @@
 @font-face {
-  font-family: 'chivo-regular';
-  src: url('../fonts/chivo/Chivo-Regular.ttf');
-}
-
-@font-face {
-  font-family: 'chivo-bold';
-  src: url('../fonts/chivo/Chivo-Bold.ttf');
-}
-
-@font-face {
   font-family: 'asul-regular';
-  src: url('../fonts/asul/Asul-Regular.ttf');
+  src: url('../fonts/Asul-Regular.eot');
+  src: url('../fonts/Asul-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Asul-Regular.woff2') format('woff2'),
+  url('../fonts/Asul-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'asul-bold';
-  src: url('../fonts/asul/Asul-Bold.ttf');
+  src: url('../fonts/Asul-Bold.eot');
+  src: url('../fonts/Asul-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Asul-Bold.woff2') format('woff2'),
+  url('../fonts/Asul-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'chivo-bold';
+  src: url('../fonts/Chivo-Bold.eot');
+  src: url('../fonts/Chivo-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Chivo-Bold.woff2') format('woff2'),
+  url('../fonts/Chivo-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'chivo-regular';
+  src: url('../fonts/Chivo-Regular.eot');
+  src: url('../fonts/Chivo-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Chivo-Regular.woff2') format('woff2'),
+  url('../fonts/Chivo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
