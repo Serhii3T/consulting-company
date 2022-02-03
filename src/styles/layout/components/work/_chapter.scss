@@ -55,6 +55,7 @@
   }
 
   &__btn {
+    background-color: transparent;
     letter-spacing: $ls-sublogo;
     font-family: $f-chivo-bold;
     justify-content: center;
@@ -63,6 +64,8 @@
     color: $c-daisy;
     cursor: pointer;
     display: flex;
+    outline: none;
+    border: none;
 
     &.hidden {
       display: none;

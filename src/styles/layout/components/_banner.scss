@@ -1,11 +1,20 @@
 .c-banner {
+  padding: 115px 0 80px;
+
+  @include media ('<tablet') {
+    padding: 0 0 80px;
+  }
+
   &__wrapper{
-    padding: 50px 0 80px;
     min-height: 590px;
     display: flex;
 
     @include media ('<desktop') {
       flex-direction: column;
+    }
+
+    @include media ('<tablet') {
+      padding: 50px 0 80px;
     }
   }
 
@@ -129,9 +138,9 @@
     position: absolute;
     max-height: 1075px;
     max-width: 865px;
-    bottom: -175px;
-    right: 200px;
+    right: 115px;
     z-index: -1;
+    bottom: 0;
 
     @include media ('<1800px') {
       right: 0;

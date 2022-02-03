@@ -20,6 +20,10 @@
 
     &--red {
       color: $c-lipstick;
+      background-image: linear-gradient(to right, $c-peppermint 0%, $c-peppermint 100%);
+      background-position: 0 37px;
+      background-repeat: repeat-x;
+      background-size: 5px 13px;
     }
   }
 

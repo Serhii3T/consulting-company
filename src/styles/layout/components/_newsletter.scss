@@ -28,6 +28,10 @@
 
   &__form {
     position: relative;
+
+    &.hidden {
+      display: none;
+    }
   }
 
   &__input {
