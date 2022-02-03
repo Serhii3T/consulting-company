@@ -4,7 +4,6 @@ const formBlock = () => {
     if (formBlock != null) {
         formBlock.addEventListener('submit', function (e) {
             e.preventDefault();
-            window.history.back();
             formBlock.classList.add('hidden');
             let thankBlock = document.querySelector('.thank-message');
             thankBlock.classList.add('active');

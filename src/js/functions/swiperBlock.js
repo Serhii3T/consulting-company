@@ -1,11 +1,7 @@
 // import swiper
-import Swiper, {Navigation} from "swiper";
+import Swiper from "swiper";
 // import styles bundle
 import 'swiper/css/bundle';
-// configure Swiper to use modules
-Swiper.use([
-    Navigation,
-]);
 
 const swiperBlock = () => {
     const sliderBlock = document.querySelector(".our-mission-swiper");
