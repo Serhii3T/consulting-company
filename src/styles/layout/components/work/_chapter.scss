@@ -63,6 +63,14 @@
     color: $c-daisy;
     cursor: pointer;
     display: flex;
+
+    &.hidden {
+      display: none;
+    }
+
+    &.active {
+      display: flex;
+    }
   }
 
   &__img {

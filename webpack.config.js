@@ -80,7 +80,7 @@ module.exports = {
         createBlock('./src/partials/blocks-work/chapter-block.html', 'chapter', ['index.html', 'about.html', 'work.html', 'contact.html']),
         createBlock('./src/partials/blocks-work/work-block.html', 'work', ['index.html', 'about.html', 'work.html', 'contact.html']),
         createBlock('./src/partials/blocks-contact/banner-block.html', 'banner-block', ['index.html', 'about.html', 'work.html', 'contact.html']),
-        createBlock('./src/partials/blocks-contact/form-block.html', 'form-block', ['index.html', 'about.html', 'work.html', 'contact.html']),
+        createBlock('./src/partials/blocks-contact/map-block.html', 'map-block', ['index.html', 'about.html', 'work.html', 'contact.html']),
         createBlock('./src/partials/blocks-contact/form-block.html', 'form-block', ['index.html', 'about.html', 'work.html', 'contact.html']),
     ],
     module: {

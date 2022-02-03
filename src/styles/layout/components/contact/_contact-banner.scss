@@ -1,0 +1,137 @@
+.c-contact {
+  position: relative;
+  padding: 50px 0;
+
+  &__circle {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+
+    &--1 {
+      background-color: $c-lipstick;
+      @include size(20);
+      left: 45.5%;
+      top: -22%;
+
+      @include media ('<950px') {
+        display: none;
+      }
+    }
+
+    &--2 {
+      background-color: $c-peppermint;
+      @include size(69);
+      left: -3.5%;
+      top: 18%;
+
+      @include media ('<tablet') {
+        left: 60%;
+        top: 0%;
+      }
+    }
+
+    &--3 {
+      background-color: $c-peppermint;
+      @include size(20);
+      left: 51%;
+      top: 22%;
+
+      @include media ('<tablet') {
+        left: 50%;
+        top: 20%;
+      }
+    }
+
+    &--4 {
+      background-color: $c-daisy;
+      @include size(48);
+      right: 6.5%;
+      top: 50%;
+
+      @include media ('<tablet') {
+        right: 5%;
+        top: 45%;
+      }
+    }
+
+    &--5 {
+      background-color: $c-albescent;
+      @include size(34);
+      left: 11%;
+      top: 55%;
+
+      @include media ('<tablet') {
+        top: 50%;
+      }
+    }
+
+  }
+
+  &__wrapper {
+    justify-content: space-between;
+    min-height: 335px;
+    display: flex;
+
+    @include media ('<tablet') {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    max-width: 320px;
+    width: 100%;
+
+    @include media ('<tablet') {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin-bottom: 135px;
+
+    @include media ('<tablet') {
+      margin-bottom: 50px;
+    }
+
+    @include media ('<phone') {
+      text-align: center;
+      font-size: $fs-h2;
+    }
+  }
+
+  &__relations {
+    @include media ('<tablet') {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  &__img {
+    position: relative;
+    max-width: 566px;
+    width: 100%;
+
+    @include media ('<tablet') {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    max-height: 621px;
+    max-width: 566px;
+    bottom: 90px;
+    z-index: -1;
+    width: 100%;
+    left: 60px;
+
+    @include media ('<desktop') {
+      position: static;
+    }
+  }
+}

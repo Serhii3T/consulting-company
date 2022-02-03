@@ -129,8 +129,8 @@
     position: absolute;
     max-height: 1075px;
     max-width: 865px;
-    bottom: 15px;
-    right: 100px;
+    bottom: -175px;
+    right: 200px;
     z-index: -1;
 
     @include media ('<1800px') {
