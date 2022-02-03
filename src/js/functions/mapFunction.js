@@ -4,7 +4,7 @@ const mapFunction = () => {
     if (mapBlock != null) {
         let myLat = { lat: 49.589082963382026, lng: 34.557623598157264 };
         let image = {
-            url: "./assets/icon/common/beetroot-20x20.png",
+            url: "./images/beetroot-sm.png",
             size: new google.maps.Size(20, 20),
         };
         let mapOptions = {
@@ -22,7 +22,7 @@ const mapFunction = () => {
         const contentString =
             '<div id="content" class="map-title">' +
             '<div id="siteNotice" class="map-title__image">' +
-            '<img src="./assets/images/beetroot.jpg" alt="beetroot">' +
+            '<img src="./images/beetroot.jpg" alt="beetroot">' +
             "</div>" +
             '<div id="bodyContent" class="map-title__info">' +
             '<h1 id="firstHeading" class="firstHeading">BEETROOT</h1>' +

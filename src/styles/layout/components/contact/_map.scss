@@ -1,0 +1,73 @@
+.c-map {
+  min-height: 720px;
+  max-width: 1860px;
+  padding: 50px 0;
+  margin: 0 auto;
+
+  &__wrapper {}
+
+  &__control {
+    box-shadow: rgb(0 0 0 / 30%) 0px 1px 4px -1px;
+    background-color: #fff;
+    display: none;
+    margin: 10px;
+  }
+
+  &__select {
+    //background-image: url(./assets/icon/common/svg/arrdown.svg);
+    content: '>';
+    background-position: 95% 15px;
+    background-repeat: no-repeat;
+    line-height: 30px;
+    appearance: none;
+    min-height: 40px;
+    min-width: 160px;
+    font-size: 18px;
+    padding: 0 17px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    &:hover {
+      background-color: #EBEBEB;
+    }
+  }
+
+  &__google-map {
+    min-height: 720px;
+    height: 100%;
+  }
+}
+
+#map .c-map__control {
+  display: block;
+}
+
+.map-title {
+  display: flex;
+
+  @include media ('<650px') {
+    flex-direction: column;
+  }
+
+  &__image {
+    min-width: 100px;
+  }
+
+  &__info {
+    margin-left: 10px;
+
+    @include media ('<500px') {
+      margin: 0;
+    }
+  }
+
+  .firstHeading {
+    font-size: 25px;
+
+    @include media ('<500px') {
+      font-size: 18px;
+      padding: 10px 0;
+    }
+  }
+}

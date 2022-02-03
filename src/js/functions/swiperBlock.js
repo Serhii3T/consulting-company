@@ -3,15 +3,14 @@ import Swiper, {Navigation} from "swiper";
 // import styles bundle
 import 'swiper/css/bundle';
 // configure Swiper to use modules
-
 Swiper.use([
     Navigation,
 ]);
 
 const swiperBlock = () => {
-    const sliderBlock = document.querySelector(".mySwiper");
+    const sliderBlock = document.querySelector(".our-mission-swiper");
     if(sliderBlock != null) {
-        let swiper = new Swiper(".mySwiper", {
+        let swiper = new Swiper(".our-mission-swiper", {
             slidesPerView: 3,
             spaceBetween: 30,
             init: false,
