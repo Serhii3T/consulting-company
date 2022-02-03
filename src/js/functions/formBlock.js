@@ -1,11 +1,12 @@
 const formBlock = () => {
     //  form block submit
-    const formBlock = document.querySelector(".form-contact");
+    const formBlock = document.querySelector(".c-form__contact");
     if (formBlock != null) {
         formBlock.addEventListener('submit', function (e) {
             e.preventDefault();
+            window.history.back();
             formBlock.classList.add('hidden');
-            let thankBlock = document.querySelector('.thank-mess');
+            let thankBlock = document.querySelector('.thank-message');
             thankBlock.classList.add('active');
         });
     }

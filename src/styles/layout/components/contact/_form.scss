@@ -1,0 +1,101 @@
+.c-form {
+  padding: 50px 0 70px;
+
+  &__wrapper {
+    text-align: left;
+
+    @include media ('<tablet') {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    letter-spacing: $ls-sm;
+    line-height: $lh-text;
+    margin-bottom: 60px;
+    color: $c-silver;
+    max-width: 325px;
+
+    @include media ('<tablet') {
+      margin: 0 auto;
+    }
+  }
+
+  &__contact {
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__input {
+    justify-content: space-between;
+    margin-bottom: 45px;
+    display: flex;
+
+    @include media ('<tablet') {
+      flex-direction: column;
+    }
+  }
+
+  & input {
+    padding: 15px 0;
+    display: block;
+    width: 31.5%;
+
+    @include media ('<tablet') {
+      width: 100%;
+    }
+  }
+
+  & textarea {
+    margin-bottom: 50px;
+    min-height: 180px;
+    width: 100%;
+  }
+
+  & input,
+  & textarea {
+    border: transparent;
+    border-bottom: 1px solid $c-silver;
+    outline: none;
+
+    &::placeholder {
+      line-height: $lh-address;
+      font-size: $fs-sm;
+      color: $c-silver;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $c-black;
+      color: $c-black;
+
+      &::placeholder {
+        color: $c-black;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: $c-daisy;
+    line-height: $lh-btn;
+    border-radius: 10px;
+    max-width: 160px;
+    color: $c-white;
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+}
+
+.thank-message {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
